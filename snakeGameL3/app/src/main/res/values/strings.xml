@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Snake</string>
+    <string name="title_activity_scrolling">A Propos</string>
+    <string name="large_text">
+    	"   Snake est un jeu de catégorie Arcade, il diffère du jeu classic par la manière"
+    	"de changer de direction, au lieu des boutons, on a ajouté la fonctionnalité "
+    	"du Swiping (Le balyage en anglais).\n\n"
+    	"   Ce jeu a été développé par un groupe de 4 étudiants en L3 informatique de "
+    	"l'université de Béjaîa, comme projet de fin de cycle."
+
+    </string>
+    <string name="Large_texte">
+        "Guide d'utilisation:\n "
+        "   Le principe de ce jeu est de tenir plus longtemps "
+        "sans s'accrocher avec les murs ou avec soi-même. En mangeant "
+        "les points noirs qui sert d'appâts pour le serpent, la taille de" 
+        "ce dernier s'augmente, plus la taille est grande, plus le niveau de difficulté s'accroit.\n\n"
+        "	Comment changer de direction ?\n"
+        " * Swiper vers la droite: pour aller à droite.\n"
+        " * Swiper vers la gauche: pour aller à gauche.\n"
+        " * Swiper vers le haut: pour s'orienter vers le haut.\n"
+    	" * Swiper vers le bas: pour s'orienter vers le bas.\n"
+	</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_aide">AIDE</string>
+</resources>
