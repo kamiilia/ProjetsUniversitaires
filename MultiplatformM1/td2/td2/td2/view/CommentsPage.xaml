@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="td2.view.CommentsPage">
+    <ContentPage.Content>
+      <StackLayout>
+            <ListView x:Name="CommentsListView"
+                ItemsSource="{Binding Comments}"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                RefreshCommand="{Binding LoadCommentsCommand}"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding Refresh, Mode=OneWay}"
+                CachingStrategy="RecycleElement">
+                <ListView.ItemTemplate >
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Date}" />
+                                <Label Text="{Binding Author.Email}"/>
+                                <Label Text="{Binding Text}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Entry Placeholder="Ajouter un Commentaire" Text="{Binding CommentRequest.Text}"/>
+            <Button Text="Ajouter" Clicked="Add_Comment"></Button>
+        </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

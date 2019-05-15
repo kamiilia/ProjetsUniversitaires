@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="td2.view.ConnexionPage">
+  <ContentPage.Content>
+      <StackLayout>
+            <Label Text="{Binding Error}"  />
+            <Entry Placeholder="tapez votre login" Text="{Binding Login.Email}"  />
+            <Entry IsPassword="True" Placeholder="tapez votre password" Text="{Binding Login.Password}"  />
+            <Button Text="Connexion" Clicked="Connexion" />
+            <Button Text="Inscription" Clicked="Inscription"/>
+        </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="td2.view.EditerMotDePassPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Enregistrer" Clicked="updatepassword"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+      <StackLayout>
+            <Label Text="Ancien mot de passe" />
+            <Entry IsPassword="True" Text="{Binding UpdatePassword.OldPassword}" />
+            <Label Text="Nouveau Mot de passe" />
+            <Entry IsPassword="True" Text="{Binding Password}" />
+            <Label Text="Confirmer mot de passe " />
+            <Entry IsPassword="True" Text="{Binding PasswordConfirm}" />
+        </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
