@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	background: #CCC;
+	font-family: Tahoma, Geneva, sans-serif;
+	/* [disabled]font-size: 12px; */
+	margin: 2px;
+}
+header {
+	background: #333;
+	height: 130px;
+}
+#div-header {
+	background: #000;
+	height: 120px;
+	width: 910px;
+	margin: auto;
+	padding-top: 10px;
+	position: relative;
+}
+#div-header h1 {
+	text-transform: uppercase;
+	color: white;
+	margin: 1px;
+	text-shadow: 0px 2px 10px #FFFFFF;
+}
+#div-header img {
+	height: 70px;
+}
+#div-header span {
+	color: #00C;
+}
+#div-header li {
+	display: inline-block;
+}
+#div-header li a {
+	color: #FFF;
+	font-size: 20px;
+	text-decoration: none;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+#div-header nav {
+	position: absolute;
+	top: 50px;
+	right: 30px;
+}
+#div-header li a:hover {
+	background: #006;
+}
+#selected {
+	background: #009;
+}
+section {
+	width: 960px;
+	background: #FFF;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+aside {
+	width: 28%;
+	height: 600px;
+	display: inline-block;
+}
+.box_aside {
+	height: 250px;
+}
+.titre_aside {
+	background: blue;
+	color: #0FC;
+	padding: 5px;
+	padding-left: 10;
+	border-bottom: 4px double #000000;
+	text-align: center;
+}
+.box_aside li a {
+	color: #333;
+	font-weight: bold;
+	text-decoration: none;
+}
+.box_aside li {
+	border-bottom: 1px double #000000;
+	padding: 8px;
+	font-size: large;
+}
+.box_aside ul {
+	list-style-image: url(images/icons/icon1.jpg);
+}
+.text_gris_f {
+	color: #333;
+}
+.text_p {
+	font-style: italic;
+}
+.box_aside img {
+	list-style-image: url(images/icons/icon1.jpg);
+	float: left;
+}
+#main {
+	background: #FFF;
+	height: 580px;
+	width: 70%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.col-1-2 {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+}
+.header-blue {
+	background: blue;
+	color: white;
+	padding: 5px;
+	padding-left: 10px;
+}
+video {
+	width: 100%;
+}
+footer {
+	height: 270px;
+	background: #333;
+}
+#div-footer {
+	width: 960px;
+	height: 270px;
+	margin: auto;
+	color: #fff;
+	padding: 10px;
+}
+.box-footer {
+ width:29%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0px 15px;
+	
+}
+.box-footer h3 {
+	border-bottom: 6px double #fff;
+	font-size: 22px;
+}
+ifram {
+	width: 200px;
+	height: 200px;
+}
+#fty{
+	
+	text-align:center;
+	
+	}
+#copy{
+	text-align:center;
+	background:black;
+	color:white;
+	margin-top:-20px;
+	padding:10px;}
+#copy a{
+	color:white;
+	}
+#page_titre{
+	background:blue;
+	color:white;
+	padding:5px;
+	margin-top:2px;
+	font-weight:lighter;
+	}
