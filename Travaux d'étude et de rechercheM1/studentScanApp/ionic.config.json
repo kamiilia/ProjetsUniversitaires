@@ -1,0 +1,7 @@
+{
+  "name": "studentScanApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

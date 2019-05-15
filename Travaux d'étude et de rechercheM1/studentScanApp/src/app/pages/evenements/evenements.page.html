@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar style="color:#325ca6">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Événements</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="listEvents">
+    <ion-item *ngFor="let event of listEvents " lines="full" detail="false" text-center>
+      <ion-label [routerLink]="['/menu/evenements/event',event.name]" routerDirection="forward"> {{event.name}}</ion-label>
+      <ion-button (click)="suppEvent(event)" style="color:#325ca6">x</ion-button>
+
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" routerLink="/menu/evenements/new" routerDirection="forward" style="color:#325ca6">
+    Ajouter
+  </ion-button>
+  <ion-button expand="block" style="color:#325ca6" (click)="suppAll()">Tout supprimer</ion-button>
+</ion-content>

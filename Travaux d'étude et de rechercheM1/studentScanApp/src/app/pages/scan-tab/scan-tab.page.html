@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar style="color:#325ca6">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{titre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div text-center><p>{{event.description}}</p></div>
+  <div text-center>Du {{event.dateDebut}} à partir de {{event.heureDebut}}</div>
+  <div text-center>Jusqu'au {{event.dateFin}} à {{event.heureFin}}</div>
+  <ion-item lines="none" detail="false" text-center>
+    <ion-label><strong>Scannez les cartes</strong></ion-label>
+  </ion-item>
+  <ion-item lines="none" detail="false" text-center>
+    <ion-spinner name="bubbles" duration="undefined" ></ion-spinner>
+  </ion-item>
+  <!--<ion-card *ngIf="scanned">
+    <ion-card-header>
+      <p>Account Tag ID: {{ tagId  }}</p><p>{{ date }}</p><p>{{ time }}</p>
+    </ion-card-header>
+  </ion-card>
+  <ion-list *ngIf="listScan">
+    <ion-item *ngFor="let scan of listScan" lines="full" detail="false" text-center>
+      <ion-label> {{scan.eventId}}</ion-label>
+      <ion-label>{{scan.date}}</ion-label>
+      <ion-label>{{scan.heure}}</ion-label>
+    </ion-item>
+  </ion-list>-->
+</ion-content>

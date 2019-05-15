@@ -1,0 +1,22 @@
+<ion-tabs>
+
+    <ion-tab-bar slot="bottom">
+
+        <ion-tab-button tab="scantab">
+            <ion-icon name="share"></ion-icon>
+            <ion-label>Scan</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="statstab" (click)="statistique()" > <!--a click redirect to stat tab-->
+            <ion-icon name="stats"></ion-icon>
+            <ion-label>Stats</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button (click)="sendmail()"> <!--a click open the mail alert-->
+            <ion-icon name="mail"></ion-icon>
+            <ion-label>Mail</ion-label>
+        </ion-tab-button>
+
+    </ion-tab-bar>
+
+</ion-tabs>

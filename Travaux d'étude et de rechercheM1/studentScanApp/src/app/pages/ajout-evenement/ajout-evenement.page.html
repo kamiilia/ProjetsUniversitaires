@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar style="color:#325ca6">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Nouvel Événement</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="addEvent()">
+    <ion-item>
+      <ion-label position="floating">Nom évenement*</ion-label>
+      <ion-input style="border-color:black" type="text" [(ngModel)]="event.name" name="title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Description*</ion-label>
+      <ion-input style="border-color:black" type="text" [(ngModel)]="event.description" name="description"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Date Début évenement*</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="event.dateDebut" name="dateDebut"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Heure Début évenement*</ion-label>
+      <ion-datetime displayFormat="HH:mm"  [(ngModel)]="event.heureDebut" name="heureDebut"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Date Fin évenement*</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY"  [(ngModel)]="event.dateFin" name="dateFin"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Heure Fin évenement*</ion-label>
+      <ion-datetime displayFormat="HH:mm"  [(ngModel)]="event.heureFin" name="heureFin"></ion-datetime>
+    </ion-item>
+    <ion-button type="submit" expand="block" style="color:#325ca6">Ajouter Évenement</ion-button>
+  </form>
+</ion-content>
